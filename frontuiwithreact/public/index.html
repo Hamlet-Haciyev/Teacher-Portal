@@ -9,9 +9,12 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;700&family=Nunito:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -20,5 +23,81 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(() => {
+        //#region Edittable with javascript
+        // let edit = document.querySelectorAll(".edit");
+        // let editList__item = document.querySelectorAll(".editList__item ");
+        // let input = document.createElement("input");
+        // let deleteBtn = document.querySelectorAll(".delete");
+
+        // for (let i = 0; i < edit.length; i++) {
+        //   edit[i].addEventListener("click", () => {
+        //     let data = edit[i].parentElement.parentElement.innerText;
+        //     $(editList__item[i]).html(
+        //       `<input class='edit__input' value="${data}"/><button class='save'>Save</button>`
+        //     );
+        //   });
+        // }
+        //#endregion
+
+        /* Edittable with Jquery */
+        $(document).on("click", ".edit", function () {
+          $(this)
+            .parent()
+            .parent()
+            .each(function () {
+              var content = $(this).children(".list__item__data").text();
+              $(this)
+                .children(".list__item__data")
+                .html(`<input class='edit__input' value="${content}" />`);
+            });
+          $(this).siblings(".save").css({
+            display: "inline-block",
+          });
+          $(this).siblings(".delete").css({
+            display: "none",
+          });
+          $(this).css({
+            display: "none",
+          });
+        });
+
+        $(document).on("click", ".delete", function () {
+          $(this)
+            .parents(".list__item__func")
+            .parent(".editList__item")
+            .remove();
+        });
+
+        $(document).on("click", ".save", function () {
+          $(this)
+            .parent()
+            .siblings(".list__item__data")
+            .html(
+              $(this)
+                .parent()
+                .siblings(".list__item__data")
+                .children(".edit__input")
+                .val()
+            );
+          $(this).css({
+            display: "none",
+          });
+          $(this).siblings(".delete").css({
+            display: "inline-block",
+          });
+          $(this).siblings(".edit").css({
+            display: "inline-block",
+          });
+        });
+      });
+    </script>
   </body>
 </html>

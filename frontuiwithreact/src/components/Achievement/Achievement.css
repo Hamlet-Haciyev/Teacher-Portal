@@ -1,0 +1,46 @@
+.table__row{
+    position: relative;
+}
+
+.actions{
+    display: flex;
+    width: 50px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.deleteAchi{
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+.saveAchi{
+    font-size: 20px;
+    color: green;
+    cursor: pointer;
+}
+.editAchi{
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+}
+.add__data__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add__icon{
+    font-size: 20px;
+    color: #38547B;
+    cursor: pointer;
+}
+.add__icon__cont4__position{
+    font-size: 20px;
+    color: #38547B;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}

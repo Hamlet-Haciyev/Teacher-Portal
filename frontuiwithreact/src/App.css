@@ -3,68 +3,25 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
+}
+body{
+    font-family: "Inter",sans-serif;
+    background-color: #F4F5FC;
+}
+a{
     text-decoration: none;
+    color: #DAD6EA;
 }
-.container{
-    width: 1440px;
-    margin: 0 auto;
+ul {
+    padding: 0;
+    margin-bottom: 0;
 }
-.row{
-    display: flex;
-    /* Temporary */
-    justify-content: center;
-}
-.col-1{
-    width: 8.33%;
-}
-.col-2{
-    width: 16.6%;
-}
-.col-3 {
-    width: 25%;
-}
-.col-4 {
-width: 33.3%;
-}
-.col-5 {
-    width: 41.6%;
-}
-.col-6 {
-    width: 50%;
-}
-.col-7 {
-    width: 58.3%;
-}
-.col-8 {
-    width: 66.6%;
-}
-.col-9 {
-    width: 75%;
-}
-.col-10 {
-    width: 83.3%;
-}
-.col-11 {
-    width: 91.6%;
-}
-.col-12 {
-    width: 100%;
-}
-/*Left part*/
-.w-393{
-    width: 393px;
-}
-/*Right part*/
-.w-1069{
-    width: 1069px;
-}
+
 /*Information section backgroundColor*/
 .brandBlue{
     background-color: #38547B;
 }
-.h-1024{
-    height: 100vh;
-}
+
 /*Profile Section*/
 .profile__image__wrapper{
     display: flex;
@@ -164,7 +121,7 @@ width: 33.3%;
 .pb-145{
     padding-bottom: 145px;
 }
-.btn{
+.custom_btn{
     background-color: #1B3B67;
     border-radius: 5px;
     width: 318px;
@@ -177,6 +134,12 @@ width: 33.3%;
     line-height: 24px;
     color: #FFFFFF;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn:focus{
+    outline: none;box-shadow: none;
 }
 
 /* Education */
@@ -187,14 +150,29 @@ width: 33.3%;
     background-color: #FFFFFF;
 }
 .education__wrapper{
-    height: 90%;
+    height: 92%;
 }
-/**/
+/* About section */
 .about__section{
     padding: 40px;
+    overflow: auto;
+    max-height: 630px;
+}
+.about__section::-webkit-scrollbar {
+    height: 7px;
+    width: 5px;
+}
+
+.about__section::-webkit-scrollbar-track {
+    border-radius: 10px;
+    --webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.about__section::-webkit-scrollbar-thumb {
+    background-color: #3d4325;
+    --webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 .about__section-title{
-
 }
 .about__section-head{
     font-family: 'Inter';
@@ -209,9 +187,7 @@ width: 33.3%;
 
 }
 .list__group__item{
-    display: inline-block;
     margin-bottom: 15px;
-   
 }
 .about__section__link{
     border-top-left-radius: 30px;
@@ -220,13 +196,110 @@ width: 33.3%;
     text-align: center;
     /* clip-path: polygon(73% 0, 76% 16%, 81% 36%, 86% 53%, 92% 76%, 100% 100%, 0 100%, 0 0); */
     clip-path: polygon(80% 0, 80% 15%, 82% 33%, 86% 53%, 92% 76%, 100% 100%, 0 100%, 0 0);
-    padding: 15px;
+    /* padding: 15px; */
+    height: 55px;
+        line-height: 55px;  
     background: #FAFAFE;
     border: 0.25px solid #FCF7F8;
+    overflow: hidden;
     box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.1);
+}
+.about__section__link a{
+    display: block;
+    height: 100%;
+        width: 100%;
+        font-weight: 600;
+}
+.about__section__link a:hover{
+    transition: color 0.3s linear;
 }
 
 .active{
     background-color: white;
+    color: #38547B;
     box-shadow: none;
+}
+/* Science section */
+.science__section {
+    padding: 30px;
+    overflow: auto;
+    max-height: 630px;
+}
+.science__section::-webkit-scrollbar {
+    height: 7px;
+    width: 5px;
+}
+.science__section::-webkit-scrollbar-track {
+    border-radius: 10px;
+    --webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.science__section::-webkit-scrollbar-thumb {
+    background-color: #3d4325;
+    --webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.table__for__science{
+}
+.table__row{
+    display: flex;
+}
+.table__row .one_portion {
+    border-radius: 6px;
+}
+.table__head{
+    padding: 15px !important;
+    color: #38547B;
+    /* align-self: center; */
+    border: 3px solid #fff;
+    text-align: center;
+    background-color: #F4F5FC;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+
+.table__data{
+    padding: 15px !important;
+    border: 3px solid #fff;
+    background-color: #F4F5FC;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.table__data__w1{
+    flex: 0 0 300px;
+}
+.table__data__w2{
+    flex: 0 0 150px;
+}
+/*  Achievement section */
+.achievement__section{
+    padding: 30px;
+    overflow: auto;
+   
+}
+.achievement__diplom{
+    margin-left: 4px;
+}
+.achievement__table__row{
+    margin-bottom: 20px;
+}
+@media screen and (max-width:768px) {
+    .btn{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:992px) {
+    .btn {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width:992px) {
+    .custom_btn {
+        margin-bottom: 5px;
+    }
+    .mini__info__title {
+        font-size: 16px;
+    }
+    .mini__info__subtitle {
+        font-size: 15px;
+    }
 }

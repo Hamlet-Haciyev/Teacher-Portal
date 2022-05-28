@@ -1,0 +1,23 @@
+.exit__btn__wrapper{
+    align-self: center;
+    flex:  1 0 200px;
+    text-align: end
+}
+.exit__btn {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #38547B;
+    opacity: 0.6;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.exit__icon{
+    font-size: 20px;
+    color: #38547B;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}

@@ -1,0 +1,51 @@
+.edit__tech__info{
+    position: relative;
+}
+.edit__tech__info__input{
+    outline: none;
+    padding: 3px 40px 3px 10px;
+    width: 286px;
+    background-color: #1B3B67;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    color: #FFFFFF;
+    height: 60px;
+    word-wrap: break-word;
+    /* white-space: pre-wrap;
+        word-break: break-all; */
+}
+.mini__info__wrapper__edit{
+    margin-bottom: 20px;
+}
+.edit__tech__info__editIcon{
+    position: absolute;
+    right: 18%;
+    top: 80%;
+    transform: translateY(-80%);
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.mini__info__title__edit{
+    text-align: left;
+    padding-left: 60px;
+    margin-bottom: 10px;
+}
+.edit__tech__info__p{
+    display: inline-block;  
+    padding: 3px 40px 3px 10px;
+    width: 286px;
+    background-color: #1B3B67;
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin: 0;
+}

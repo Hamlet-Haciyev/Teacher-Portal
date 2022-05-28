@@ -1,0 +1,52 @@
+.editList__item{
+    background-color:white;
+    box-shadow:0 0 0 1px rgba(0,0,0,0.1);
+    border-radius:10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.list__group__item{
+    align-items: center;
+}
+.list__item__data{
+    width: 100%;
+}
+.list__item__func{
+    margin-left: 30px;
+    flex: 1 0 100px;
+    text-align: center;
+}
+
+
+.edit__input{
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+.save{
+    color: #32AD60;
+    padding: 3px;
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.edit{
+    display: inline-block;
+    cursor: pointer;
+    color: blue;
+}
+.delete{
+    display: inline-block;
+    cursor: pointer;
+    color: red;
+}
+
+.css-b62m3t-container{
+height: 100px;
+}
+.css-1s2u09g-control{
+height: 100px;
+}
