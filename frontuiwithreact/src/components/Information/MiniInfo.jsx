@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./TechEditInformation.css";
 import { MdOutlineModeEdit } from "react-icons/md";
-const MiniInfo = ({ title, subtitle, mbnone, version }) => {
+const MiniInfo = ({ title, subtitle, mbnone, mode }) => {
   const [info, setInfo] = useState("");
   const [click, setClick] = useState(true);
   const inputEdit = useRef();
@@ -17,7 +17,7 @@ const MiniInfo = ({ title, subtitle, mbnone, version }) => {
 
   return (
     <>
-      {version == undefined ? (
+      {mode == undefined ? (
         <>
           <div className="mini__info__wrapper">
             <h3 className="mini__info__title">{title}</h3>
@@ -36,20 +36,26 @@ const MiniInfo = ({ title, subtitle, mbnone, version }) => {
                 {click ? (
                   <p ref={inputEdit} className="edit__tech__info__p">
                     {subtitle == info ? subtitle : info}
+                    <MdOutlineModeEdit
+                      className="edit__tech__info__editIcon"
+                      onClick={handleClick}
+                    />
                   </p>
                 ) : (
-                  <input
-                    className="edit__tech__info__input"
-                    type="text"
-                    value={info}
-                    onChange={(e) => handleChangeInfo(e)}
-                  />
+                  <>
+                    <input
+                      className="edit__tech__info__input"
+                      type="text"
+                      value={info}
+                      onChange={(e) => handleChangeInfo(e)}
+                    />
+                    <MdOutlineModeEdit
+                      className="edit__tech__info__editIcon__input"
+                      onClick={handleClick}
+                    />
+                  </>
                 )}
               </>
-              <MdOutlineModeEdit
-                className="edit__tech__info__editIcon"
-                onClick={handleClick}
-              />
             </div>
           </div>
         </>

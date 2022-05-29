@@ -35,7 +35,7 @@ ul {
     position: relative;
 }
 
-.profile__image__wrapper::before{
+.profile__image__wrapper__edit::before{
     content: "";
     position: absolute;
     top: 0;
@@ -64,7 +64,7 @@ ul {
     font-style: normal;
     font-size: 22px;
     line-height: 31px;
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 .role{
     font-family: 'Inter';

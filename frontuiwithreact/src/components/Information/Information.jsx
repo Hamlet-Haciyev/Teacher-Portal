@@ -8,12 +8,12 @@ const Information = () => {
   //   setClientHeight(window.innerHeight)
   // },[clientHeight])
   return (
-    <div className='d-flex fl-dir pt-43' style={{height:100+"vh"}}>
-        <Profile/>
-        <Research/>
-        <Button/>
+    <div className="d-flex fl-dir pt-43" style={{ height: 100 + "vh" }}>
+      <Profile role={"Kafedra mudiri"} />
+      <Research />
+      <Button />
     </div>
-  )
-}
+  );
+};
 
-export default Information
+export default Information;

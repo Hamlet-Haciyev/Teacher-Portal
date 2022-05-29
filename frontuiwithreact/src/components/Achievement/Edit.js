@@ -148,9 +148,10 @@ const Edit = () => {
                   className="table__data one_portion"
                   style={{ flexBasis: width + "px" }}
                 >
-                  Proyekt haqqında məlumat
+                  <p>Proyekt haqqında məlumat</p>
                 </td>
                 <div className="actions">
+                  <AiFillSave className="saveAchi" />
                   <FiEdit className="editAchi" />
                   <RiDeleteBin6Line className="deleteAchi" />
                 </div>
@@ -183,9 +184,10 @@ const Edit = () => {
                   className="table__data one_portion"
                   style={{ flexBasis: width + "px" }}
                 >
-                  İxtira haqqında məlumat
+                  <p>İxtira haqqında məlumat</p>
                 </td>
                 <div className="actions">
+                  <AiFillSave className="saveAchi" />
                   <FiEdit className="editAchi" />
                   <RiDeleteBin6Line className="deleteAchi" />
                 </div>
@@ -218,9 +220,10 @@ const Edit = () => {
                   className="table__data one_portion"
                   style={{ flexBasis: width + "px" }}
                 >
-                  Patent haqqında məlumat
+                  <p>Patent haqqında məlumat</p>
                 </td>
                 <div className="actions">
+                  <AiFillSave className="saveAchi" />
                   <FiEdit className="editAchi" />
                   <RiDeleteBin6Line className="deleteAchi" />
                 </div>

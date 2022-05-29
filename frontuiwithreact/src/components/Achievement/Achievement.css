@@ -20,6 +20,7 @@
     font-size: 20px;
     color: green;
     cursor: pointer;
+    display: none;
 }
 .editAchi{
     font-size: 20px;
@@ -43,4 +44,9 @@
     position: absolute;
     right: 20px;
     top: 20px;
+}
+.edit__achi__input{
+    width: 90%;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
