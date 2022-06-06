@@ -8,6 +8,8 @@ const Profile = ({ name, role, mode }) => {
   const [info, setInfo] = useState("");
   const [click, setClick] = useState(true);
   const roleEdit = useRef();
+  const inputEdit = useRef();
+  const imgSrc = useRef();
   function handleChangeInfo(e) {
     setInfo(e.target.value);
   }
@@ -17,6 +19,14 @@ const Profile = ({ name, role, mode }) => {
   useEffect(() => {
     setInfo(role);
   }, []);
+  function changeProfileImg() {
+    let fs = new FileReader();
+    let file = [...inputEdit.current.files][0];
+    fs.readAsDataURL(file);
+    fs.onload = () => {
+      imgSrc.current.src = fs.result;
+    };
+  }
   return (
     <>
       {mode == undefined ? (
@@ -33,15 +43,29 @@ const Profile = ({ name, role, mode }) => {
         </div>
       ) : (
         <div className="mb-110 m-auto" style={{ paddingTop: "40px" }}>
-          <div className="profile__image__wrapper profile__image__wrapper__edit b-rads50 mb-24">
+          <div
+            className="profile__image__wrapper profile__image__wrapper__edit b-rads50 mb-24"
+            style={{ width: "234px" }}
+          >
             <img
-              className="profile__image__child__div b-rads50"
+              className="profile__image__child__div b-rads50 profile__img__edit"
               src={profileImage}
+              ref={imgSrc}
               alt=""
             />
             <span className="txt__edit">Profilini deyish</span>
             <div className="profile__editIcon__wrapper">
-              <MdOutlineModeEdit className="edit__tech__profile__editIcon" />
+              <label htmlFor="file">
+                <MdOutlineModeEdit className="edit__tech__profile__editIcon" />
+              </label>
+              <input
+                type="file"
+                style={{ display: "none" }}
+                id="file"
+                accept="jpg jpef png"
+                ref={inputEdit}
+                onChange={changeProfileImg}
+              />
             </div>
           </div>
           <div className="usnm__rol__edt">

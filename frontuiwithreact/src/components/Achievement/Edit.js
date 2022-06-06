@@ -8,6 +8,7 @@ import "./Achievement.css";
 const Edit = () => {
   const [width, setWidth] = useState(0);
   const [count, setCount] = useState(0);
+  const [isAddData, setisAddData] = useState(false);
   const amount = useRef();
   useEffect(() => {
     setWidth(
@@ -75,7 +76,12 @@ const Edit = () => {
                 Fərqlənmə
               </td>
             </tr>
-            <AddData count={count} isAddData={false} width={width} />
+            <AddData
+              count={count}
+              isAddData={isAddData}
+              setisAddData={setisAddData}
+              width={width}
+            />
           </tbody>
         </table>
 
@@ -121,7 +127,7 @@ const Edit = () => {
                 https://www.figma.com/file/hy5ej9m9IjBmcHqWEtgdI1/ASO%C4%B0U-TEACHER?node-id=2%3A5
               </td>
             </tr>
-            <AddData count={2} isAddData={false} width={width} />
+            {/* <AddData count={2} isAddData={isAddData} width={width} /> */}
           </tbody>
         </table>
 
@@ -156,7 +162,7 @@ const Edit = () => {
                   <RiDeleteBin6Line className="deleteAchi" />
                 </div>
               </tr>
-              <AddData count={1} isAddData={false} />
+              {/* <AddData count={1} isAddData={isAddData} /> */}
             </tbody>
           </table>
         </div>
@@ -192,7 +198,7 @@ const Edit = () => {
                   <RiDeleteBin6Line className="deleteAchi" />
                 </div>
               </tr>
-              <AddData count={1} isAddData={false} />
+              {/* <AddData count={1} isAddData={isAddData} /> */}
             </tbody>
           </table>
         </div>
@@ -228,7 +234,7 @@ const Edit = () => {
                   <RiDeleteBin6Line className="deleteAchi" />
                 </div>
               </tr>
-              <AddData count={1} isAddData={false} />
+              {/* <AddData count={1} isAddData={isAddData} /> */}
             </tbody>
           </table>
         </div>

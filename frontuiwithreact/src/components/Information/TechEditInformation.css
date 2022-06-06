@@ -108,3 +108,8 @@
     text-align: center;
     line-height: 42px;
 }
+.profile__img__edit{
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+}

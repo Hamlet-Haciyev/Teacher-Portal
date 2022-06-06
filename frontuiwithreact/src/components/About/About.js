@@ -2,6 +2,12 @@ import React from "react";
 import "../../App.css";
 import Techinfo from "../Techinfo";
 const About = () => {
+  // const [info, setInfo] = useState([]);
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:4000/about")
+  //     .then((response) => setInfo(response.data));
+  // }, []);
   return (
     <div className="about__section">
       <div
@@ -11,6 +17,11 @@ const About = () => {
         <h4 className="about__section-head">Təhsil</h4>
 
         <ul className="list__group">
+          {/* {info.map((inf, index) => {
+            if (inf.title === "tehsil") {
+              <Techinfo key={index} date={inf.date} position={inf.position} />;
+            }
+          })} */}
           <Techinfo
             date={"1975-1981"}
             position={

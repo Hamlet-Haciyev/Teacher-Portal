@@ -1,7 +1,7 @@
 .editList__item{
     background-color:white;
     box-shadow:0 0 0 1px rgba(0,0,0,0.1);
-    border-radius:10px;
+    border-radius:5px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -15,10 +15,13 @@
 .list__item__func{
     margin-left: 30px;
     flex: 1 0 100px;
-    text-align: center;
+    text-align: end;
 }
 
-
+.add_data{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
 .edit__input{
     width: 100%;
     outline: none;
@@ -28,7 +31,7 @@
 .save{
     color: #32AD60;
     padding: 3px;
-    display: none;
+    /* display: none; */
     font-size: 25px;
     cursor: pointer;
 }
@@ -49,4 +52,13 @@ height: 100px;
 }
 .css-1s2u09g-control{
 height: 100px;
+}
+.about__list__style{
+    box-shadow: none;
+    padding: 15px;
+}
+.about__sect__edit__head{
+    background-color: #FFFFFF;
+    padding: 15px;
+    margin-bottom: 0;
 }

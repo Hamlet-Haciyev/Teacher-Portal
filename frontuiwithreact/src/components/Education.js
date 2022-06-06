@@ -10,7 +10,7 @@ import EditAchi from "./Achievement/Edit";
 const Education = () => {
   return (
     <>
-      <div className="education__wrapper bg-white">
+      <div className="education__wrapper">
         <div className="bg-white">
           <Routes>
             <Route path="/" element={<About />}></Route>
