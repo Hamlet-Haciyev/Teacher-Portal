@@ -282,11 +282,7 @@ ul {
 .achievement__table__row{
     margin-bottom: 20px;
 }
-@media screen and (max-width:768px) {
-    .btn{
-        margin-bottom: 20px;
-    }
-}
+
 @media screen and (max-width:992px) {
     .btn {
         margin-bottom: 20px;

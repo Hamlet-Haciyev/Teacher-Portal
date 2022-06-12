@@ -1,8 +1,14 @@
-.table__row{
+.table__head{
+    text-align: left;
+}
+.tblWrapper{
+    margin-bottom: 20px;
+}
+.table__row {
     position: relative;
 }
 
-.actions{
+.actions {
     display: flex;
     width: 50px;
     align-items: center;
@@ -11,33 +17,39 @@
     right: 10px;
     top: 20px;
 }
-.deleteAchi{
+
+.deleteAchi {
     font-size: 20px;
     color: red;
     cursor: pointer;
 }
-.saveAchi{
+
+.saveAchi {
     font-size: 20px;
     color: green;
     cursor: pointer;
     display: none;
 }
-.editAchi{
+
+.editAchi {
     font-size: 20px;
     color: blue;
     cursor: pointer;
 }
-.add__data__row{
+
+.add__data__row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.add__icon{
+
+.add__icon {
     font-size: 20px;
     color: #38547B;
     cursor: pointer;
 }
-.add__icon__cont4__position{
+
+.add__icon__cont4__position {
     font-size: 20px;
     color: #38547B;
     cursor: pointer;
@@ -45,7 +57,8 @@
     right: 20px;
     top: 20px;
 }
-.edit__achi__input{
+
+.edit__achi__input {
     width: 90%;
     border-radius: 10px;
     padding: 5px 10px;
