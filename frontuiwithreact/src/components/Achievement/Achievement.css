@@ -28,7 +28,7 @@
     font-size: 20px;
     color: green;
     cursor: pointer;
-    display: none;
+    /* display: none; */
 }
 
 .editAchi {
@@ -62,4 +62,19 @@
     width: 90%;
     border-radius: 10px;
     padding: 5px 10px;
+}
+.resetButton{
+    border: none;
+    background: none;
+}
+.tbl__dt__edit_vers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.action{
+    text-align: end;
+}
+.col4{
+    flex-basis: 230px
 }
