@@ -1,0 +1,87 @@
+.table__head {
+    text-align: left;
+}
+
+.tblWrapper {
+    margin-bottom: 20px;
+}
+
+.table__row {
+    position: relative;
+}
+
+.actions {
+    display: flex;
+    width: 50px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.add__data__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add__icon {
+    font-size: 20px;
+    color: #38547B;
+    cursor: pointer;
+}
+
+.add__icon__cont4__position {
+    font-size: 20px;
+    color: #38547B;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.edit__achi__input {
+    width: 90%;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.resetButton {
+    border: none;
+    background: none;
+}
+
+.tbl__dt__edit_vers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action {
+    text-align: end;
+}
+
+.col4 {
+    flex-basis: 230px
+}
+
+
+.deleteAchi {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.saveAchi {
+    font-size: 20px;
+    color: green;
+    cursor: pointer;
+    /* display: none; */
+}
+
+.editAchi {
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+}

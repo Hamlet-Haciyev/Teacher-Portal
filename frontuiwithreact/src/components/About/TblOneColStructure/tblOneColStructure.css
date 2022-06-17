@@ -1,0 +1,45 @@
+.col1{
+    display: flex;
+    justify-content: space-between;
+}
+.tblOneColStructure{
+    width: 100%;
+    position: relative;
+}
+.resetBtn{
+    border: none;
+    background: none;
+    font-size: 22px;
+    position: absolute;
+}
+.cancelBtn{
+    color: red;
+    right: 15px;
+    top: 30px;
+}
+.addBtn{
+    color: green;
+    right: 15px;
+    top: 5px;
+}
+.about__section__head{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #38547B;
+    margin-bottom: 13px;
+        
+}
+.editlist__item{
+    flex-basis: 230px;
+    margin-top: 15px;
+    background: #FFF;
+    border-radius: 5px;
+}
+.firstTitle{
+    background: #fff;
+    margin-bottom: 0;
+    padding: 15px;
+}

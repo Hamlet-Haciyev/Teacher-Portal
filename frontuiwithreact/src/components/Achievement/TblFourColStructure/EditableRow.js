@@ -1,10 +1,9 @@
 import { IoMdAdd } from "react-icons/io";
-import { MdBookmarkAdd } from "react-icons/md";
+import { GiCancel } from "react-icons/gi";
 const EditableRow = ({
   editFormData,
   handleEditFormChange,
   handleCancelClick,
-  inputRef,
 }) => {
   return (
     <tr className="table__row">
@@ -57,7 +56,7 @@ const EditableRow = ({
           type="button"
           onClick={handleCancelClick}
         >
-          <MdBookmarkAdd />
+          <GiCancel />
         </button>
       </td>
     </tr>

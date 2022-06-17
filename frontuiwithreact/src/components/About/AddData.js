@@ -35,7 +35,7 @@ const AddData = ({
       ) : (
         <BsFillBookmarkPlusFill
           className="add__icon__cont4__position about__addData"
-          onClick={(e) => handleAddData()}
+          onClick={() => handleAddData()}
         />
       )}
     </tr>

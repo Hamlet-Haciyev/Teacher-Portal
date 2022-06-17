@@ -1,0 +1,24 @@
+.col1{
+    display: flex;
+    justify-content: space-between;
+}
+.tblOneColStructure{
+    width: 100%;
+    position: relative;
+}
+.resetBtn{
+    border: none;
+    background: none;
+    font-size: 22px;
+    position: absolute;
+}
+.cancelBtn{
+    color: red;
+    right: 15px;
+    top: 30px;
+}
+.addBtn{
+    color: green;
+    right: 15px;
+    top: 5px;
+}
